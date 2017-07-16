@@ -12,9 +12,9 @@ import com.xl.demo.domain.Team;
 public class TeamController {
 	
 	@Autowired TeamDao teamDao;
-		
+
 	@RequestMapping("team/{name}")
 	public Team team(@PathVariable String name){
 		return teamDao.findByName(name);
-	}	
+	}
 }
