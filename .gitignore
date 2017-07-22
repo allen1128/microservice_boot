@@ -1,0 +1,42 @@
+Thumbs.db
+.DS_Store
+.project
+.settings
+/gen/
+/bin/
+/gradle/
+target/
+*!.mvn/*
+/build/
+/out/
+*mvnw.*
+*mvnw
+*MANIFEST.MF
+*maven-wrapper.properties
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+spring_cloud_eureka_server/.mvn/wrapper/maven-wrapper.jar
+spring_cloud_configuration_server/.mvn/wrapper/maven-wrapper.jar
+spring_cloud_client/.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
