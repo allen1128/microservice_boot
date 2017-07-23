@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WordController {
 
 	@Value("${words}") String words;
-	//String words = "icicle,refrigerator,blizzard,snowball";
 	
 	@RequestMapping("/")
 	public @ResponseBody String getWord() {
