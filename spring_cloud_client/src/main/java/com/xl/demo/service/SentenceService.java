@@ -3,25 +3,30 @@ package com.xl.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.xl.demo.dao.WordDaoImpl;
+import com.xl.demo.dao.AdjectiveClient;
+import com.xl.demo.dao.ArticleClient;
+import com.xl.demo.dao.NounClient;
+import com.xl.demo.dao.SubjectClient;
+import com.xl.demo.dao.VerbClient;
 
 @Service
 public class SentenceService {
 	
 	@Autowired
-	WordDaoImpl adjectiveService;
+	NounClient nounService;
 	
 	@Autowired
-	WordDaoImpl verbService;
+	AdjectiveClient adjectiveService;
 	
 	@Autowired
-	WordDaoImpl nounService;
+	SubjectClient subjectService;
 	
 	@Autowired
-	WordDaoImpl articleService;
+	ArticleClient articleService;
 	
 	@Autowired
-	WordDaoImpl subjectService;
+	VerbClient verbService;
+	
 	
 	public String buildContent(){
 		return subjectService.getWord() + " " + verbService.getWord() + " " + articleService.getWord() + " "
