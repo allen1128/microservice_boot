@@ -7,3 +7,7 @@ spring:
           uri: https://github.com/allen1128/ConfigData
 server:
   port: 8001
+  
+management:
+  security:
+    enabled: false  

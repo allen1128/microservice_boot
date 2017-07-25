@@ -41,10 +41,12 @@ spring:
   profiles: sentence
   application:
     name: sentence
-server:
-  port: 8020
-  
-  
+    
+---
+spring:  
+  profiles: client
+  application:
+    name: lucky-word
   
 #Allow Eureka to recognize two apps of the same type on the same host as separate instances:
 ---
