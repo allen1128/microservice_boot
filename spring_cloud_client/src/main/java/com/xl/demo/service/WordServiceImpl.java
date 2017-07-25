@@ -30,19 +30,33 @@ public class WordServiceImpl implements WordService{
 	VerbClient verbService;
 
 	@Override
+	@HystrixCommand(fallbackMethod="defaultVerb")
 	public Word getVerb() {
 		return verbService.getWord();
+	}	
+
+	public Word defaultVerb(){
+		return new Word("(with no verb)");
 	}
 
 	@Override
-	
+	@HystrixCommand(fallbackMethod="defaultAdjective")
 	public Word getAdjective() {
 		return adjectiveService.getWord();
 	}
+	
+	public Word defaultAdjective(){
+		return new Word("(with no adjective)");
+	}
 
 	@Override
+	@HystrixCommand(fallbackMethod="defaultSubject")
 	public Word getSubject() {
 		return subjectService.getWord();
+	}
+	
+	public Word defaultSubject(){
+		return new Word("(with no subject)");
 	}
 
 	@Override
@@ -56,7 +70,12 @@ public class WordServiceImpl implements WordService{
 	}
 
 	@Override
+	@HystrixCommand(fallbackMethod="defaultNoun")
 	public Word getNoun() {
 		return nounService.getWord();
+	}
+	
+	public Word defaultNoun(){
+		return new Word("(with no noun)");
 	}
 }
