@@ -5,14 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.xl.demo.service.SentenceService;
-
+import com.xl.demo.service.SentenceServiceImpl;
 
 @RestController
 public class SentenceController {
 	
 	@Autowired
-	SentenceService sentenceService;
+	SentenceServiceImpl sentenceService;
 	
 	@RequestMapping("/sentence")
 	public @ResponseBody String getSentence() {
