@@ -17,4 +17,9 @@ public class SentenceController {
 	public @ResponseBody String getSentence() {
 		return sentenceService.buildContent();
 	}
+	
+	@RequestMapping("/ajax")
+	public @ResponseBody String ajaxSentence(){
+		return "sentence";
+	}
 }
