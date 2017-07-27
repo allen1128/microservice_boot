@@ -1,13 +1,13 @@
 package com.xl.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.xl.demo.service.SentenceServiceImpl;
 
-@RestController
+@Controller
 public class SentenceController {
 	
 	@Autowired
@@ -19,7 +19,7 @@ public class SentenceController {
 	}
 	
 	@RequestMapping("/ajax")
-	public @ResponseBody String ajaxSentence(){
+	public String ajaxSentence(){
 		return "sentence";
 	}
 }
