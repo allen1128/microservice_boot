@@ -25,12 +25,6 @@ server:
   port: 8080
 words: NotApplicable
 
----
-# Zuul-proxied services can be found by calling /services/subject, /services/verb, etc. 
-zuul:
-  prefix: /services 
-
 --- 
 # Allow thymeleaf template changes to reload: 
-spring.thymeleaf.cache: false 
-
+spring.thymeleaf.cache: false

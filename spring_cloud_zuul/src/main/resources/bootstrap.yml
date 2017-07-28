@@ -1,0 +1,10 @@
+---
+spring:
+  application:
+    name: web-sentence
+    
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8001

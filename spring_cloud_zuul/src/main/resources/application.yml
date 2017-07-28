@@ -1,0 +1,12 @@
+--- 
+zuul:
+  prefix: /api
+
+---
+server:
+  port: 8040
+words: NotApplicable
+
+---
+spring.thymeleaf.cache: false 
+
