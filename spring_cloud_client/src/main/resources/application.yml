@@ -18,13 +18,6 @@ server:
   port: 8030
 words: NotApplicable
 
----
-spring:
-  profiles: ajax
-server:
-  port: 8080
-words: NotApplicable
-
 --- 
 # Allow thymeleaf template changes to reload: 
 spring.thymeleaf.cache: false

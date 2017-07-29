@@ -48,12 +48,6 @@ spring:
   application:
     name: lucky-word
     
----
-spring:  
-  profiles: ajax
-  application:
-    name: ajax
-  
 #Allow Eureka to recognize two apps of the same type on the same host as separate instances:
 ---
 eureka:
