@@ -13,11 +13,7 @@ target/
 *mvnw
 *MANIFEST.MF
 *maven-wrapper.properties
-*.jar
-!.mvn/wrapper/maven-wrapper.jar
-spring_cloud_eureka_server/.mvn/wrapper/maven-wrapper.jar
-spring_cloud_configuration_server/.mvn/wrapper/maven-wrapper.jar
-spring_cloud_client/.mvn/wrapper/maven-wrapper.jar
+**/.mvn/wrapper/*
 
 ### STS ###
 .apt_generated
