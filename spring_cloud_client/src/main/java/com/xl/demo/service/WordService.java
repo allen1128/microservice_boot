@@ -2,10 +2,12 @@ package com.xl.demo.service;
 
 import com.xl.demo.domain.Word;
 
+import rx.Observable;
+
 public interface WordService {
-	public Word getVerb();
-	public Word getAdjective();
-	public Word getSubject();
-	public Word getArticle();
-	public Word getNoun();
+	public Observable<Word> getVerb();
+	public Observable<Word> getAdjective();
+	public Observable<Word> getSubject();
+	public Observable<Word> getArticle();
+	public Observable<Word> getNoun();
 }
