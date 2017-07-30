@@ -2,8 +2,9 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:8001
-      
+      uri: http://user:password@localhost:8001
+
+# user:password@
 # Depending on which profile is active, the application gives 
 # itself a different name when registering with Eureka
 ---

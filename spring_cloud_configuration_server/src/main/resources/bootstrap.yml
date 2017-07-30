@@ -1,0 +1,9 @@
+---
+encrypt:
+  key: key
+ 
+security:
+  user:
+    password: '{cipher}3ee2ef7c891250adcd5814380882d20140ca49c570197f6f5a62f12cb2abf7d5'
+  
+
