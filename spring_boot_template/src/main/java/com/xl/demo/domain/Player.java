@@ -36,11 +36,6 @@ public class Player {
 		this.position = position;
 	}
 
-	@Override
-	public String toString() {
-		return "Player [id=" + id + ", name=" + name + ", position=" + position + "]";
-	}
-
 	public Long getId() {
 		return id;
 	}

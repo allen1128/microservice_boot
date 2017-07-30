@@ -70,10 +70,4 @@ public class Team {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
-	@Override
-	public String toString() {
-		return "Team [id=" + id + ", name=" + name + ", location=" + location + ", mascotte=" + mascotte + ", players="
-				+ players + "]";
-	}
 }
