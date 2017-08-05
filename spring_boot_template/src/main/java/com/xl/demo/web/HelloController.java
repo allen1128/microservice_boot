@@ -1,4 +1,4 @@
-package com.xl.demo;
+package com.xl.demo.web;
 
 import java.util.Map;
 

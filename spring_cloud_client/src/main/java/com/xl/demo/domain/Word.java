@@ -1,7 +1,5 @@
 package com.xl.demo.domain;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
-
 public class Word {
 
 	String word;

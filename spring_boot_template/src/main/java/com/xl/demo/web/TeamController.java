@@ -1,4 +1,4 @@
-package com.xl.demo;
+package com.xl.demo.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.xl.demo.domain.Team;
-import com.xl.demo.repository.TeamRepository;
+import com.xl.demo.service.TeamService;
 
 @RestController
-public class TeamController {
-	
-	@Autowired TeamRepository teamRepository;
+public class TeamController {	
+	@Autowired TeamService teamService;
 	
 	/*@RequestMapping("/teams")
 	public List<Team> getTeams() {
@@ -25,6 +24,6 @@ public class TeamController {
 	
 	@RequestMapping("/teams/{name}")
 	public Team findByName(@PathVariable String name){
-		return teamRepository.findByName(name);
+		return teamService.findByName(name);
 	}	
 }
